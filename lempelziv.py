@@ -1,16 +1,18 @@
 """
 Module for performing sliding window Lempel-Ziv on a string.
+
+Does not properly compressed, only used to visualize algorithm.
 """
 
 from typing import List, Tuple, Union
 
 # set parameters
-# source = "Hello everyone! Hello world!"
-with open('source.txt') as f:
-    source = f.read()
+source = "Hello everyone! Hello world!"
+# with open('source.txt') as f:
+#     source = f.read()
 window_size = 50
 buffer_size = 10
-verbose = False
+verbose = True
 
 def encode(input_string: str) -> List[Union[str, Tuple[int]]]:
 
